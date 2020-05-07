@@ -1,4 +1,4 @@
-#projects {
+#technology {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -64,6 +64,9 @@
     @media only screen and (min-width: $cut) {
       float: left;
     }
+    border-top: 1px solid #333;
+    border-right: 1px solid #333;
+    border-bottom-right-radius: 0;
   }
 }
 
@@ -83,17 +86,15 @@
               background-color 0.3s ease-out,
               border-color 0.3s ease-out;
   &:hover {
-    background-color: $logo_secondary;
     border-color: $logo_primary;
-    color: $logo_primary;
+    color: $logo_secondary;
     transition: color 0.3s ease-in,
                 background-color 0.3s ease-in,
                 border-color 0.3s ease-in;
   }
   &:active {
-    background-color: $logo_secondary;
     border-color: $logo_secondary;
-    color: $logo_primary;
+    color: $logo_secondary;
     transition: color 0.3s ease-in,
                 background-color 0.3s ease-in,
                 border-color 0.3s ease-in;

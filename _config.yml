@@ -1,19 +1,15 @@
 # Site settings
 title: Trident Bioscience, Inc.
 description: Optimized biology.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "tridentbio.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+baseurl: ""
+url: "tridentbio.github.io"
 
 # User settings
 username: Trident Bioscience, Inc.
-user_description: Description goes here.
 email: info@trident.bio
 
 # Google-analytics
 google-analytics:
   id: ""
-
-# plugins:
-# - jekyll-seo-tag
 
 exclude: ['package.json', 'src' , 'node_modules']

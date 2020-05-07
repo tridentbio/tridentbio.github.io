@@ -3,7 +3,7 @@
   display: flex;
   vertical-align: bottom;
   width: 100%;
-  min-height: 100vh;
+  min-height: 10vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -45,15 +45,25 @@
   }
 }
 
+#logo {
+  height: 20vh;
+  max-width: 85vw;
+}
+
 .header-links {
   margin: 10px;
+  margin-top: 5vh;
   .link {
-    color: #FFF;
+    color: $logo_primary;
     text-decoration: none;
     font-size: 15px;
     margin: 10px;
     @media only screen and (min-width:$cut){
       font-size: 20px;
+    }
+    &:hover {
+        color: $logo_secondary;
+        transition: color 0.3s ease-in;
     }
   }
 }
@@ -90,7 +100,7 @@
 }
 
 .down {
-  color: #FFF;
+  color: $logo_primary;
   position: absolute;
   bottom: 25px;
   width: 100%;
@@ -113,10 +123,10 @@
       -webkit-animation: pulse 1.3s infinite;
       animation: pulse 1.3s infinite;
       &:hover {
-        color: $sec;
+        color: $logo_secondary;
       }
       &:active {
-        color: $sec;
+        color: $logo_secondary;
       }
   }
 }

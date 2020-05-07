@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
 
 body {
     margin: 0;
@@ -6,16 +7,17 @@ body {
     font-size: 100%;
     line-height: 1.5;
     color: #555;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 article, aside, figcaption, figure, footer, header, nav, section {
     display: block;
 }
-h1, h2, h3, h4, stong {
+h1, h2, h3, h4, strong {
     margin-top: 1em;
     padding-top: 1em;
     line-height: 1.25;
     color: #333;
+    font-family: 'Josefin Sans', sans-serif;
 }
 h1 {
     font-size: 2.5rem;

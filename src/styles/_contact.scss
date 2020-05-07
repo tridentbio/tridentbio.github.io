@@ -1,0 +1,8 @@
+.email {
+	color: $logo_primary;
+	text-decoration: none;
+	&:hover {
+		color: $logo_secondary;
+		transition: color 0.3s ease-in;
+	}
+}

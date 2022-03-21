@@ -1,12 +1,12 @@
-@import "lib/normalize";
-@import "lib/fontawesome";
-@import "lib/devicon";
-
 @import 'base';
 @import 'vars';
 @import 'animation';
 @import 'header';
 @import 'about';
-@import 'technology';
+@import 'platform';
 @import 'contact';
 @import 'footer';
+
+@import "lib/normalize";
+@import "lib/fontawesome";
+@import "lib/devicon";

@@ -1,4 +1,4 @@
-#technology {
+#platform {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -33,6 +33,7 @@
   @media only screen and (min-width: $cut) {
     margin-left: 0;
     width: 48%;
+    text-align: left;
   }
 }
 
@@ -50,11 +51,24 @@
   }
   img {
     @media only screen and (min-width: $cut) {
-      float: right;
+      float: left;
+    }
+  }
+  video {
+    @media only screen and (min-width: $cut) {
+      float: left;
     }
   }
 }
 
+.contents-left {
+  @media only screen and (min-width: $cut) {
+    float: left;
+    margin-top: -5%;
+    width: 48%;
+    text-align: right;
+  }
+}
 .images-left {
   @media only screen and (min-width: $cut) {
     float: left;
@@ -62,11 +76,13 @@
   }
   img {
     @media only screen and (min-width: $cut) {
-      float: left;
+      float: right;
     }
-    border-top: 1px solid #333;
-    border-right: 1px solid #333;
-    border-bottom-right-radius: 0;
+  }
+  video {
+    @media only screen and (min-width: $cut) {
+      float: right;
+    }
   }
 }
 
@@ -76,7 +92,7 @@
   padding: 5px;
   color: $logo_primary;
   background-color: transparent;
-  border: 1px solid $logo_primary;
+  border: 3px solid $logo_primary;
   border-radius: 10px;
   text-align: center;
   outline: none;
@@ -99,4 +115,23 @@
                 background-color 0.3s ease-in,
                 border-color 0.3s ease-in;
   }
+}
+
+.email-input {
+	border: none;
+	border-bottom: 3px solid $logo_secondary;
+	width: 45%;
+	font-size: 14pt;
+	font-family: 'Open Sans', sans-serif;
+  vertical-align: middle;
+  .focus {
+    border: 3px solid $logo_primary;
+  }
+  &:focus {
+    border: 3px solid $logo_secondary;
+  }
+}
+
+.devicon-github-original {
+  color: $logo_primary;
 }
